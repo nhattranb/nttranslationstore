@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NT Translation Store - Your order</title>
+</head>
+<body>
+    <header>
+        <h1>NT Translation Store</h1>
+        <p>The official distributor for Translated Documents and Materials, produced using SDL-RWS Trados!</p>
+        <p>Produced for the courses COSC2430 - Web Programming and LANG1305 - Translation and Technology.</p>
+    </header>
+    <center>
+        <main style="width: 486px;">
+            <section>
+
+                <h2>NT Translation Customer Service</h2>
+                <h2>ORDER REGISTRATION FORM (Please follow strictly)</h2>
+
+                <h3>Thanks for shopping at our store. Before your order is confirmed, please finished the following form.</h3>
+
+                <form action="form-processing" method="post" id="product-list">
+                    <fieldset>
+                        <legend>Please enter your personal information:</legend>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required><br><br>
+
+                        <label for="middleName">Middle Name:</label>
+                        <input type="text" id="middleName" name="middleName" required><br><br>
+
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required><br><br>
+
+                        <label for="nid">Your National ID Number (12 Digits):</label>
+                        <input type="number" id="nid" name="nid" required><br>
+
+                        <label for="phone">Your Phone Number:</label>
+                        <input type="number" id="phone" name="phone" required><br>
+
+                        <h5>IMPORTANT: Your order will NOT be accepted if you do not have a phone number.</h5>
+                        <h5>We will call you to confirmed your order, so please type it correctly.</h5>
+                    </fieldset>
+                    <br>
+                    <h3>NOTE: The store is exclusively for Vietnam.</h3>
+                    <fieldset>
+                        <legend>We would like to know your location:</legend>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address"><br><br>
+
+                        <label for="city">City:</label>
+                        <select id="city" name="city">
+                            <option value="">Select a city</option>
+                                <option value="1">Ho Chi Minh City</option>
+                                <option value="2">Ha Noi</option>
+                                <option value="3">Da Nang</option>
+                                <option value="4">Can Tho</option>
+                                <option value="5">Thua Thien-Hue</option>
+                                <option value="6">Hai Phong</option>
+                        </select><br><br>
+
+                        <label for="location">City area:</label>
+                        <select id="location" name="location">
+                            <option value="">Select your city location:</option>
+                                <option value="1">Suburban</option>
+                                <option value="2">Urban</option>
+                        </select><br><br>
+                        
+                        <label for="postcode">Postcode:</label>
+                        <input type="number" id="postcode" name="postcode"><br><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Purchase Options</legend>
+                            <label for="product-select">Select ALL your product(s) you need to buy:</label>
+                            <select id="product-select" name="product" multiple>
+                                <option value="chatgpt">How ChatGPT affects our life (English-Vietnamese) </option>
+                                <option value="cycling">Why should you cycle??? (English-Vietnamese)</option>
+                                <option value="facebook">Analysis of Facebook (Vietnamese-English) - PRODUCED USING TRADOS</option>
+                                <option value="malaysia">Malaysian economy grow up (English-Vietnamese) - PRODUCED USING TRADOS</option>
+                            </select>
+                            <p><strong>Note:</strong> please click Shift/Ctrl key to select multiple products at the same time.</p>
+                            <p><strong>Due to limitations, customers can only buy a maximum of 10 products overall.</strong></p>
+                    </fieldset>
+                    <br>
+                    <input type="checkbox" id="accept" name="accept" value="Yes">
+                    <label for="accept"> I confirmed that all order information are correct. I understand that my order will not be accepted if any mistakes were detected in the process.</label><br>
+                    <br>
+                    <input type="submit" value="Complete your order"
+            </section>
+        </main>
+    </center>
+    <footer>
+        <p>(c) 2023 NT Translation Distribution. All rights reserved</p>
+        <p>Trados (c) 2023 by SDL-RWS Software Foundations. Trados is a trademark of the SDL-RWS.</p>
+        <p>Produced by Nhat Tran for courses COSC2430 and LANG1305 with dedication.</p>
+    </footer>
+</body>
+</html>
